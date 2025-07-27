@@ -37,7 +37,7 @@ namespace E_Commerce
             {
                 options.AddPolicy("AllowAngularApp", policy =>
                 {
-                    policy.WithOrigins("http://localhost:4200")
+                    policy.WithOrigins("http://localhost:4200", "https://ecommerce-payment.vercel.app", "https://interactive-card-details-ecru.vercel.app")
                            .AllowAnyOrigin()
                             .AllowAnyMethod()
                             .AllowAnyHeader(); // لو بتستخدم كوكيز
